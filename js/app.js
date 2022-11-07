@@ -1,7 +1,7 @@
 const system = {
-  0: "dezimal",
-  1: "hexadezimal",
-  2: "binär"
+  0: "d",
+  1: "0x",
+  2: "b"
 };
 
 const d = Math.floor(Math.random() * 256);
@@ -12,7 +12,7 @@ const aufgabe = Math.floor(Math.random() * 3);
 console.log(aufgabe);
 
 
-$("#exercise").text(`Bitte forme ${system[aufgabe]} ${all[aufgabe]} um!`);
+$("#exercise").text(`${system[aufgabe]}${all[aufgabe]}`);
 
 switch (aufgabe) {
   case 0:
@@ -31,7 +31,7 @@ switch (aufgabe) {
 $("#systems-form").submit((e) => {
   e.preventDefault();
   if ($("#dez").val() == all[0]
-    && $("#hex").val() == all[1]
+    && $("#hex").val().toUpperCase() == all[1]
     && $("#bin").val() == all[2]) {
     $("#richtig").slideDown();
   }
