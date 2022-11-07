@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="images/icons/favicon/favicon.ico" rel="icon" />
+    <title></title>
+  </head>
+  <body>
+  <div class="container">
+    <h1 id="exercise"></h1>
+    <div class="form-container">
+      <form id="systems-form">
+        <div class="input">
+          <input type="text" id="dez" placeholder="dez" />
+        </div>
+        <div class="input">
+          <input type="text" id="hex" placeholder="hex" />
+        </div>
+        <div class="input">
+          <input type="text" id="bin" placeholder="bin" />
+        </div>
+        <button type="submit" id="submit">prüfen</button>
+      </form>
+    </div>
+    <div id="richtig" hidden>
+      <h1>Richtig!</h1>
+      <button onclick="location.reload()">weiter</button>
+    </div>
+    <div id="falsch" hidden>
+      <h1>Falsch!</h1>
+      <button onclick="location.reload()">weiter</button>
+    </div>
+  </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/calculations.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

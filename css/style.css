@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+body {
+	background-color: #aaa;
+	font-size: 1rem;
+	font-family: 'IBM Plex Mono', Arial, Helvetica, sans-serif;
+}
+
+.container {
+	width: 35%;
+	margin: 0 auto;
+}
+
+#exercise {
+	font-size: 3rem;
+}
+.input {
+	margin-top: 3rem;
+}
+
+input[type="text"] {
+	font-family: 'IBM Plex Mono', Arial, Helvetica, sans-serif;
+	outline: none;
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid red;
+	font-size: 3rem;
+}
+
+#submit {
+	margin-top: 3rem;
+	width: 100%;
+	font-size: 2rem;
+	border: none;
+	padding: 0.3rem 0;
+	font-weight: 900;
+	color: #e9afed;
+	border-radius: 1rem;
+	background-color: #336688;
+}
