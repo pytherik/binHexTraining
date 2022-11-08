@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <link href="images/icons/favicon/favicon.ico" rel="icon" />
-    <title></title>
+    <title>BinHexDezTraining</title>
   </head>
   <body>
   <div class="container">
@@ -22,16 +22,16 @@
         <div class="input">
           <input type="text" id="bin" placeholder="bin" size="8"/>
         </div>
-        <button type="submit" id="submit">prüfen</button>
+        <button class="button" type="submit" id="submit">prüfen</button>
       </form>
     </div>
     <div id="richtig" hidden>
-      <h1>Richtig!</h1>
-      <button onclick="location.reload()">weiter</button>
+      <h1 class="success richtig">Richtig!</h1>
+      <button class="button" onclick="location.reload()">weiter</button>
     </div>
     <div id="falsch" hidden>
-      <h1>Falsch!</h1>
-      <button onclick="location.reload()">weiter</button>
+      <h1 class="success falsch">Falsch!</h1>
+      <button class="button" onclick="location.reload()">weiter</button>
     </div>
   </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

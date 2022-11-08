@@ -34,9 +34,13 @@ $("#systems-form").submit((e) => {
     && $("#hex").val().toUpperCase() == all[1]
     && $("#bin").val() == all[2]) {
     $("#richtig").slideDown();
+    $("#submit").hide();
+    $("#falsch").hide();
+    // $(".form-container").slideUp();
   }
   else {
     $("#falsch").slideDown();
+    // $(".form-container").slideUp();
   }
 });
 

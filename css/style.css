@@ -46,18 +46,35 @@ input[type="text"] {
 	color: #e9d5da;
 }
 
-#submit {
-	margin-top: 3rem;
-	width: 30%;
+.button {
+	margin-top: 2rem;
+	/* width: 30%; */
 	text-align: center;
 	font-size: 2rem;
 	border: none;
 	letter-spacing: .5rem;
-	padding: 0.3rem 0;
+	padding: 0.3rem 5rem;
 	font-weight: 900;
 	color: #e9d5da;
 	border-radius: 1rem;
 	background-color: #4E6C50;
+}
+
+.button:hover {
+	filter: brightness( 150% );
+}
+
+.success {
+	margin-top: 1rem;
+	font-size: 3rem;
+}
+
+.richtig {
+	color: green;
+}
+
+.falsch {
+	color: red;
 }
 
 @media screen and (max-width: 1800px) {
@@ -77,20 +94,20 @@ input[type="text"] {
 	}
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1500px) {
 	* {
 		font-size: 95%;
 	}
 	.container {
-		width: 40%;
+		width: 30%;
 	}
 
 	.input {
-		margin-top: 8rem;
+		margin-top: 7rem;
 	}
 
 	#submit {
-		margin-top: 8rem;
+		margin-top: 3rem;
 	}
 }
 @media screen and (max-width: 950px) {
