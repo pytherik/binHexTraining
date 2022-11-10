@@ -3,8 +3,8 @@ const system = {
   1: "0x",
   2: "b"
 };
-const richtig = ["Schönchen!", "Korrekt!", "Prima!", "Schick!", "Mega!", "Famos!", "Knorke!", "Toll!", "Hübsch!", "Fein!", "Oké!", "Jope!"];
-const falsch = ["Nope!", "Nee!", "Autsch!", "Mies!", "Falsch!", "Quatsch!", "Nö!", "Wohl kaum!", "Hmmmm...", "Stinkt!", "Kalt!", "Oh jeh!"];
+const richtig = ["Cool!", "Straight!", "Wow!","Schönchen!", "Korrekt!", "Prima!", "Schick!", "Mega!", "Famos!", "Knorke!", "Toll!", "Hübsch!", "Fein!", "Oké!", "Jope!"];
+const falsch = ["WTF!", "Nicht!", "Au weia!","Nope!", "Nee!", "Autsch!", "Mies!", "Falsch!", "Quatsch!", "Nö!", "Wohl kaum!", "Hmmmm...", "Stinkt!", "Kalt!", "Oh jeh!"];
 const wrong = ["😩","😞","😵","🤮","😭","😖","💩","😱","😡","🥴","😟","😕","😬","❌"];
 const right = ["😜","🤪","👻","😇","😙","😊","😃","🤓","🍬","🍺","🍰","😎","🙃","👍"];
 const d = Math.floor(Math.random() * 256);
