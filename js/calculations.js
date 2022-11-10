@@ -7,16 +7,26 @@ const hex = {
   15: "F"
 }
 
+const richtig = ["Cool!", "Straight!", "Wow!","Schönchen!", "Korrekt!", "Prima!", "Schick!", "Mega!", "Famos!", "Knorke!", "Toll!", "Hübsch!", "Fein!", "Oké!", "Jope!"];
+const falsch = ["WTF!", "Nicht!", "Au weia!","Nope!", "Nee!", "Autsch!", "Mies!", "Falsch!", "Quatsch!", "Nö!", "Wohl kaum!", "Hmmmm...", "Stinkt!", "Kalt!", "Oh jeh!"];
+const wrong = ["😩","😞","😵","🤮","😭","😖","💩","😱","😡","🥴","😟","😕","😬","❌"];
+const right = ["😜","🤪","👻","😇","😙","😊","😃","🤓","🍬","🍺","🍰","😎","🙃","👍"];
+
+function icon(r = 0) {  
+  return r == 0 ? right[Math.floor(Math.random() * right.length)]
+    : wrong[Math.floor(Math.random() * wrong.length)];
+}
+
+
+
 function get_bin(x) {
   let xBin = "";
   for (let i = 7; i >= 0; i--) {
     if (2 ** i <= x) {
       xBin += "1";
       x -= 2 ** i;
-      continue;
     } else {
       xBin += "0";
-      continue;
     }
   }
   return xBin;
@@ -26,19 +36,9 @@ function get_hex(x) {
   let xHex = "";
   if (x > 15) {
     const div = Math.floor(x / 16)
-    if (div > 9) {
-      xHex += hex[div]
-      x -= 16 * div;
-    } else {
-      xHex += div.toString();
-      x -= 16 * div;
-    }
+    div > 9 ? xHex += hex[div]: xHex += div.toString();
+    x -= 16 * div;
   }
-
-  if (x > 9) {
-    xHex += hex[x]
-  } else {
-    xHex += x.toString();
-  }
+  x > 9 ? xHex += hex[x]: xHex += x.toString();
   return xHex;
 }
