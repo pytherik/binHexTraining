@@ -4,8 +4,8 @@ const system = {
   2: "b"
 };
 
-const wrong = ["🤑","😡","🥴","☠","☹","❌"];
-const right = ["😊","😃","🤓","😎","🙃","👍"];
+const wrong = ["🤑","😡","🥴","😟","😕","😬","❌"];
+const right = ["😊","😃","🤓","🍬","🍺","🍰","😎","🙃","👍"];
 const d = Math.floor(Math.random() * 256);
 const all = [d, get_hex(d), get_bin(d)];
 const aufgabe = Math.floor(Math.random() * 3);
