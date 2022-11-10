@@ -4,6 +4,8 @@ const system = {
   2: "b"
 };
 
+const wrong = ["🤑","😡","🥴","☠","☹","❌"];
+const right = ["😊","😃","🤓","😎","🙃","👍"];
 const d = Math.floor(Math.random() * 256);
 const all = [d, get_hex(d), get_bin(d)];
 const aufgabe = Math.floor(Math.random() * 3);
@@ -30,37 +32,37 @@ $("#systems-form").submit((e) => {
   const d = $("#dez").val();
   const h = $("#hex").val().toUpperCase();
   const b = $("#bin").val();
-  const errMessage = "❌";
-  const succMessage = "👍";
+  const errMessage  = wrong[Math.floor(Math.random() * wrong.length)];
+  const succMessage = right[Math.floor(Math.random() * right.length)];
   // const errMessage = "Hier stimmt was nicht!";
   if (d == all[0] && h== all[1] && b == all[2]) {
     $(".error").hide();
     $("#richtig").slideDown();
-    $("#dezErr").show().text(succMessage);
-    $("#hexErr").show().text(succMessage);
-    $("#binErr").show().text(succMessage);
+    $("#dezErr").show().text(right[Math.floor(Math.random() * right.length)]);
+    $("#hexErr").show().text(right[Math.floor(Math.random() * right.length)]);
+    $("#binErr").show().text(right[Math.floor(Math.random() * right.length)]);
     $("#submit").hide();
     $("#falsch").hide();
   }
   else {
     $(".error").hide();
     if ( d != all[0] ) {
-      $("#dezErr").show().text(errMessage);
+      $("#dezErr").show().text(wrong[Math.floor(Math.random() * wrong.length)]);
     }
     else {
-      $("#dezErr").show().text(succMessage);
+      $("#dezErr").show().text(right[Math.floor(Math.random() * right.length)]);
     }
     if (h != all[1]) {
-      $("#hexErr").show().text(errMessage);
+      $("#hexErr").show().text(wrong[Math.floor(Math.random() * wrong.length)]);
     }
     else {
-      $("#hexErr").show().text(succMessage);
+      $("#hexErr").show().text(right[Math.floor(Math.random() * right.length)]);
     }
     if (b != all[2]) {
-      $("#binErr").show().text(errMessage);
+      $("#binErr").show().text(wrong[Math.floor(Math.random() * wrong.length)]);
     }
     else {
-      $("#binErr").show().text(succMessage);
+      $("#binErr").show().text(right[Math.floor(Math.random() * right.length)]);
     }
     $("#falsch").slideDown();
     // $(".form-container").slideUp();
