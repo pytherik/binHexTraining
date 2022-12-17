@@ -8,7 +8,7 @@ const hex = {
 }
 
 const richtig = ["Cool!", "Straight!", "Wow!","Schönchen!", "Korrekt!", "Prima!", "Schick!", "Mega!", "Famos!", "Knorke!", "Toll!", "Hübsch!", "Fein!", "Oké!", "Jope!"];
-const falsch = ["WTF!", "Nicht!", "Au weia!","Nope!", "Nee!", "Autsch!", "Mies!", "Falsch!", "Quatsch!", "Nö!", "Wohl kaum!", "Hmmmm...", "Stinkt!", "Kalt!", "Oh jeh!"];
+const falsch = ["WTF!", "Nicht!", "Au weia!","Nope!", "Nee!", "Autsch!", "Mies!", "Falsch!", "Quatsch!", "Nö!", "Wohl kaum!", "Hmmmm...", "Stinkt!", "Kalt!", "Oh je!"];
 const wrong = ["😩","😞","😵","🤮","😭","😖","💩","😱","😡","🥴","😟","😕","😬","❌"];
 const right = ["😜","🤪","👻","😇","😙","😊","😃","🤓","🍬","🍺","🍰","😎","🙃","👍"];
 

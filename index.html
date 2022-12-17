@@ -15,24 +15,26 @@
     <div class="form-container">
       <form id="systems-form">
         <div class="input dez">
-          <input type="text" id="dez" placeholder="dez" size="3" maxlength="3" autocomplete="off"/>
+          <input type="text" id="dez" placeholder="dez" size="8" maxlength="3" autocomplete="off"/>
           <span class="error" id="dezErr" hidden></span>
         </div>
         <div class="input hex">
-          <input type="text" id="hex" placeholder="hex" size="2" maxlength="2" autocomplete="off"/>
+          <input type="text" id="hex" placeholder="hex" size="8" maxlength="2" autocomplete="off"/>
           <span class="error" id="hexErr" hidden></span>
         </div>
         <div class="input bin">
           <input type="text" id="bin" placeholder="bin" size="8" maxlength="8" autocomplete="off"/>
           <span class="error" id="binErr" hidden></span>
         </div>
-        <div id="falsch" hidden>
+        <div class="result" id="falsch" hidden>
           <h1 class="success falsch">Falsch!</h1>
         </div>
-        <button class="button" type="submit" id="submit">prüfen</button>
+        <div class="btn">
+          <button class="button" type="submit" id="submit">prüfen</button>
+        </div>
       </form>
     </div>
-    <div id="richtig" hidden>
+    <div class="result" id="richtig" hidden>
       <h1 class="success richtig">Richtig!</h1>
       <button class="button" onclick="location.reload()">weiter</button>
     </div>

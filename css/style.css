@@ -33,6 +33,7 @@ body {
 	font-size: 3rem;
 }
 .input {
+	text-align: center;
 	margin-top: 7rem;
 }
 
@@ -46,6 +47,10 @@ input[type="text"] {
 	color: #e9d5da;
 }
 
+.btn {
+	margin-top: 2rem;
+	text-align: center;
+}
 .button {
 	margin-top: 2rem;
 	/* width: 30%; */
@@ -68,7 +73,10 @@ input[type="text"] {
 	margin-top: 1rem;
 	font-size: 3rem;
 }
-
+.result {
+	margin-top: 3rem;
+	text-align: center;
+}
 .richtig {
 	color: green;
 }

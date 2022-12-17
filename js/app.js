@@ -1,7 +1,7 @@
 const system = {
-  0: "d",
-  1: "0x",
-  2: "b"
+  0: "dez ",
+  1: "hex 0x",
+  2: "bin "
 };
 
 const d = Math.floor(Math.random() * 256);
@@ -31,7 +31,7 @@ $("#systems-form").submit((e) => {
   const h = $("#hex").val().toUpperCase();
   const b = $("#bin").val();
 
-  if (d == all[0] && h== all[1] && b == all[2]) {
+  if (d == all[0] && (h== all[1] || h== `0${all[1]}`) && b == all[2]) {
     $(".error").hide();
     $("#richtig").slideDown();
     $(".success.richtig").text(richtig[Math.floor(Math.random() * richtig.length)]);
