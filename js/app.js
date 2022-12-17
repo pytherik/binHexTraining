@@ -14,14 +14,17 @@ switch (aufgabe) {
   case 0:
     $(".input.dez").hide();
     $("#dez").val(all[0])
+    $("#hex").focus();
     break;
   case 1:
     $(".input.hex").hide();
     $("#hex").val(all[1])
+    $("#dez").focus();
     break;
   case 2:
     $(".input.bin").hide();
     $("#bin").val(all[2])
+    $("#dez").focus();
     break;
 }
 
