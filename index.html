@@ -23,7 +23,7 @@
           <span class="error" id="hexErr" hidden></span>
         </div>
         <div class="input bin">
-          <input type="text" id="bin" placeholder="bin" size="8" maxlength="8" autocomplete="off"/>
+          <input type="text" id="bin" placeholder="bin" size="8" minlength="8" maxlength="8" autocomplete="off"/>
           <span class="error" id="binErr" hidden></span>
         </div>
         <div class="result" id="falsch" hidden>
@@ -34,7 +34,7 @@
         </div>
       </form>
     </div>
-    <div class="result" id="richtig" hidden>
+    <div class="btn result" id="richtig" hidden>
       <h1 class="success richtig">Richtig!</h1>
       <button class="button" onclick="location.reload()">weiter</button>
     </div>
